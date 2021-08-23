@@ -1,0 +1,28 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00@\x002\x000\x002\x000\x00-\x008\x00-\x002\x003\x00-\x00i\x00m\x00a\x00g\x00e\x00B\x00a\x00s\x00i\x00c\x00s\x00-\x00s\x00l\x00a\x00m\x00S\x00a\x00m\x00p\x00l\x00e)
+
+[CMake]
+Build Directory Count=1
+Current Build Directory Index-Host System=0
+
+[CMake][CMake Build Directory 0]
+Build Directory Path=/home/cyh/Desktop/Daily-Summary/code/2020-8-23-imageBasics-slamSample/build
+Build Type=Debug
+CMake Binary=/usr/bin/cmake
+CMake Executable=/usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=/usr/local
+Runtime=Host System
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=New Compiled Binary Launcher
+Type=Native Application
+
+[Project]
+VersionControlSupport=kdevgit
