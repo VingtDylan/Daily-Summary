@@ -31,13 +31,13 @@ Fl-all = \frac{N}{HW} \times 100 \%
 $$
 其中 **AE** 的理解可以参考论文[^1], 光流表示为 $(u,v) = (u,v,1)$，**后者的单位为(pixels，pixels，frame)**
 
-<img src = "\images\AAE.png" align="center" style="width:50%">
+<img src = "./images/AAE.png" align="center" style="width:50%">
 
 # Development
 
 《Optical Flow and Scene Flow Estimation: A Survey》 [^2]中给出了 **data-driven**和 **hybrid-driven**的光流估计网络，发展如下所示，具体可参考论文内容。
 
-<img src = "\images\Survey-Zhai2021.png" align="center" style="width:90%">
+<img src = "./images/Survey-Zhai2021.png" align="center" style="width:90%">
 
 ## Classification
 
@@ -57,7 +57,7 @@ $$
 
 2.https://www.zybuluo.com/rianusr/note/1471754#0-%E5%85%89%E6%B5%81%E7%AE%80%E4%BB%8B
 
-<img src = "\images\SPyNet1.png" align="center" style="width:90%">
+<img src = "./images/SPyNet1.png" align="center" style="width:90%">
 
 Key idea:
 
@@ -93,7 +93,7 @@ V_k=u(V_{k-1}) - v_k
 $$
 金字塔的最高层将流初始化为0，其余结构不难理解。
 
-<img src = "\images\SPyNet1.png" align="center" style="width:90%">
+<img src = "./images/SPyNet1.png" align="center" style="width:90%">
 
 上图为三层金字塔的示例，实验中作者使用的是五层的金字塔。
 
@@ -105,7 +105,7 @@ $$
 $$
 具体如下图所示。
 
-<img src = "\images\SPyNet2.png" align="center" style="width:70%">
+<img src = "./images/SPyNet2.png" align="center" style="width:70%">
 
 训练每一个网络 $G_k$， 通过最小化残差流 $v_k$ 和 $\hat{v}_k$ 间的AEE：
 $$
@@ -196,7 +196,7 @@ FlowNetS < SpyNet < FlowNetC
 
 1. Visualization of opeical flow estimates
 
-<img src = "\images\SPyNet4.png" align="center" style="width:60%">
+<img src = "./images/SPyNet4.png" align="center" style="width:60%">
 
 2. Comparsion: AEE
 

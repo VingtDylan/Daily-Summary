@@ -17,7 +17,7 @@
 
 考虑将一个向量$\boldsymbol{v}$，沿着旋转轴$\boldsymbol{u}=(x,y,z)^{T}$旋转$\theta$度，得到$\boldsymbol{v}^{\prime}$:
 
-<img src = "\images\Axis-angle.png" align="center" style="width:35%">
+<img src = "./images/Axis-angle.png" align="center" style="width:35%">
 
 先进行旋转的分解，把$\boldsymbol{v}$分解成**平行**于旋转轴$\boldsymbol{u}$以及**正交**于$\boldsymbol{u}$的两个分量：$\boldsymbol{v}_{\parallel},\boldsymbol{v}_{\perp}$，即：
 $$
@@ -27,7 +27,7 @@ $$
 $$
 \boldsymbol{v}^{\prime} = \boldsymbol{v}_{\parallel}^{\prime} + \boldsymbol{v}_{\perp}^{\prime}
 $$
-<img src = "\images\factorization.png" align="center" style="width:35%">
+<img src = "./images/factorization.png" align="center" style="width:35%">
 
 从正交投影公式，可以得出:
 $$
@@ -39,7 +39,7 @@ $$
 
 对于$\boldsymbol{v}_{\perp}$，利用三角的知识可以得到:
 
-<img src = "\images\rotate-perp.png" align="center" style="width:55%">
+<img src = "./images/rotate-perp.png" align="center" style="width:55%">
 $$
 \begin{align}
 \boldsymbol{v}_{\perp}^{\prime}&=\boldsymbol{v}_{v}^{\prime}+\boldsymbol{v}_{w}^{\prime}\notag\\
