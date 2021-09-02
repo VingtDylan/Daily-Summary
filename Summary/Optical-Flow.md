@@ -17,8 +17,8 @@ $(u_{*},v_{*})$ = ground truth flow $(u,v)$ = estimated flow
 
 |              Metric              |                           Formula                            |
 | :------------------------------: | :----------------------------------------------------------: |
-|  **Average Angular Error(AAE)**  | $1/HW\sum\arccos\left[(u_{\\*}u + v_{\\*}v + 1) / \sqrt{(u_{\\*}^{2} + v_{\\*}^{2} + 1)(u^2 + v^2 + 1)})\right]$ |
-| **Average Endpoint  Error(AEE)** |         $1/HW\sum\sqrt{(u_{\\*}-u)^2+(v_{\\*}-v)^2}$         |
+|  **Average Angular Error(AAE)**  | $1/HW\sum\arccos\left[(u_{*}u + v_{*}v + 1) / \sqrt{(u_{*}^{2} + v_{*}^{2} + 1)(u^2 + v^2 + 1)})\right]$ |
+| **Average Endpoint  Error(AEE)** |           $1/HW\sum\sqrt{(u_{*}-u)^2+(v_{*}-v)^2}$           |
 | **Root-Mean-Square Error(RMSE)** |      $\sqrt{1/HW\sum_{x,y}(I_{warped}(x,y)-I(x,y))^2}$       |
 
 假设像素集合 $B_1$ 满足$EPE > 5$, 满足下式的像素集合为 $B_2$。
