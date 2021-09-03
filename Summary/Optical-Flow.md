@@ -206,7 +206,7 @@ FlowNetS < SpyNet < FlowNetC
 
    All run times are measured on Flying Chairs and exclude image loading time.
 
-<img src = "\images\SPyNet3.png" align="center" style="width:80%">
+<img src = "./images/SPyNet3.png" align="center" style="width:80%">
 
 其他数据集结果见论文
 
