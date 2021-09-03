@@ -212,7 +212,7 @@ FlowNetS < SpyNet < FlowNetC
 
 参数个数: 96% smaller than FlowNet
 
-<img src = "\images\SPyNet5.png" align="center" style="width:80%">
+<img src = "./images/SPyNet5.png" align="center" style="width:80%">
 
 其他的实验结果和分析论文中有详细的描述.
 
