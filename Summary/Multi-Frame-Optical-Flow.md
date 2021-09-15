@@ -1,6 +1,8 @@
 [toc]
 
-# PWCNet Fusion (WACV 2019)
+# MFF（Multi-Frame FLow）
+
+## PWCNet Fusion (WACV 2019)
 
 **Paper : A Fusion Approach for Multi-Frame Optical Flow Estimation**
 
@@ -43,7 +45,7 @@ $$
 
 <img src = "./images/PWCNetFusion3.png" align="center" style="width:90%">
 
-# IRR-PWCNet (CVPR 2019)
+## IRR-PWCNet (CVPR 2019)
 
 **Paper : Iterative Residual Refinement for Joint Optical Flow and Occlusion Estimation**
 
@@ -79,5 +81,43 @@ $$
 
 $$
 l_{\text {PWC-Net }}=\frac{1}{N} \sum_{i=1}^{N} \alpha_{i}\left(l_{\text {flow }}^{i}+\lambda \cdot l_{\mathrm{occ}}^{i}\right)
+$$
+
+## UMFO
+
+**Paper: Unsupervised Learning of Multi-Frame Optical Flow and Occlusions**
+
+<img src = "./images/UMFO.png" align="center" style="width:85%">
+
+论文提出的模型是对PWC-Net模型进行了修改，同时输入是三帧图片，PWC中对两帧图片的特征金字塔做cost volume(第二帧的特征需要经过一次warping)，本文提出的模型是对$\mathcal{F}^p$ 和 $\mathcal{F}^f$分别计算cost volume，最后将两个cost volume进行堆叠，传入后面的解码器中。
+
+在损失函数方面，提出了如下的损失函数：
+$$
+\mathcal{L}=\mathcal{L}_P+\mathcal{L}_{S_F}+\mathcal{L}_{S_P}+\mathcal{L}_{S_O}+\mathcal{L}_{CV}+\mathcal{L}_{O}
+$$
+论文引入了$\boldsymbol{O}\in[0,1]^{W\times H\times 2}$用来衡量photometric losss，并且使用softmax保持$||\boldsymbol{O}(p)||_1=1$ 。
+
+损失函数中各项表达式依次如下:
+$$
+\begin{aligned}
+\mathcal{L}_{P} &=\sum_{\mathbf{p} \in \Omega} \mathbf{O}^{(2)}(\mathbf{p}) \cdot \delta\left(\hat{\mathbf{I}}_{P}\left(\mathbf{p}+\mathbf{u}_{P}(\mathbf{p})\right), \mathbf{I}_{R}(\mathbf{p})\right) \\
+&+\sum_{\mathbf{p} \in \Omega} \mathbf{O}^{(1)}(\mathbf{p}) \cdot \delta\left(\hat{\mathbf{I}}_{F}\left(\mathbf{p}+\mathbf{u}_{F}(\mathbf{p})\right), \mathbf{I}_{R}(\mathbf{p})\right)
+\end{aligned}
+$$
+
+$$
+\mathcal{L}_{S_{P}}=\sum_{\mathbf{p} \in \Omega} \xi\left(\nabla_{x} \mathbf{I}_{R}(\mathbf{p})\right) \rho\left(\nabla_{x} \mathbf{U}_{P}(\mathbf{p})\right)+\sum_{\mathbf{p} \in \Omega} \xi\left(\nabla_{y} \mathbf{I}_{R}(\mathbf{p})\right) \rho\left(\nabla_{y} \mathbf{U}_{P}(\mathbf{p})\right)
+$$
+
+$$
+\mathcal{L}_{S_{O}}=\sum_{\mathbf{p} \in \Omega} \xi\left(\nabla_{x} \mathbf{I}_{R}(\mathbf{p})\right)\left\|\nabla_{x} \mathbf{O}(\mathbf{p})\right\|^{2}+\sum_{\mathbf{p} \in \Omega} \xi\left(\nabla_{y} \mathbf{I}_{R}(\mathbf{p})\right)\left\|\nabla_{y} \mathbf{O}(\mathbf{p})\right\|^{2}
+$$
+
+$$
+\mathcal{L}_{C V}=\sum_{\mathbf{p} \in \Omega} \rho\left(\mathbf{U}_{P}(\mathbf{p})+\mathbf{U}_{F}(\mathbf{p})\right)
+$$
+
+$$
+\mathcal{L}_{O}=-\sum_{\mathbf{p} \in \Omega} \mathbf{O}^{(1)}(\mathbf{p}) \cdot \mathbf{O}^{(2)}(\mathbf{p})
 $$
 
