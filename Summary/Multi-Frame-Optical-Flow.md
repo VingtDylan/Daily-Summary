@@ -1,8 +1,22 @@
 [toc]
 
-# MFF（Multi-Frame FLow）
+# Optical Flow
 
-## PWCNet Fusion (WACV 2019)
+## Two-Frame Fashion
+
+### GMA(ICCV 2021)
+
+**Paper: Learning to Estimate Hidden Motions with Global Motion Aggregation**
+
+<img src = "./images/GMA1.png" align="center" style="width:90%">
+
+
+
+
+
+##  MFF（Multi-Frame FLow）
+
+### PWCNet Fusion (WACV 2019)
 
 **Paper : A Fusion Approach for Multi-Frame Optical Flow Estimation**
 
@@ -45,7 +59,7 @@ $$
 
 <img src = "./images/PWCNetFusion3.png" align="center" style="width:90%">
 
-## IRR-PWCNet (CVPR 2019)
+### IRR-PWCNet (CVPR 2019)
 
 **Paper : Iterative Residual Refinement for Joint Optical Flow and Occlusion Estimation**
 
@@ -83,7 +97,7 @@ $$
 l_{\text {PWC-Net }}=\frac{1}{N} \sum_{i=1}^{N} \alpha_{i}\left(l_{\text {flow }}^{i}+\lambda \cdot l_{\mathrm{occ}}^{i}\right)
 $$
 
-## UMFO
+### UMFO
 
 **Paper: Unsupervised Learning of Multi-Frame Optical Flow and Occlusions**
 
