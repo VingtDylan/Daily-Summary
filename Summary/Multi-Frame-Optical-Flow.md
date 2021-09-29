@@ -1,16 +1,26 @@
 # Optical Flow
 
+## Definition
+
+1. 光流(optical flow)
+2. 由粗到细(coarse-to-fine)
+3. 端到端(end-to-end)
+4. 相关代价体(cost correlation volume)
+5. 
+
+
+
 ## Two-Frame Fashion
 
-### RAFT（ECCV 2020 best)
+### RAFT (ECCV 2020 best)
 
 **Paper: RAFT: Recurrent All-Pairs Field Transforms for Optical Flow**
 
 <img src = "./images/RAFT1.png" align="center" style="width:90%">
 
-[[笔记链接](./PapersNotes/RAFT(ECCV 2020 Best).md)]
+[笔记链接](./PapersNotes/RAFT(ECCV 2020 Best).md)
 
-### GMA(ICCV 2021)
+### GMA (ICCV 2021)
 
 **Paper: Learning to Estimate Hidden Motions with Global Motion Aggregation**
 
