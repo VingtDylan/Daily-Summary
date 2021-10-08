@@ -168,29 +168,27 @@
 			根据个体学习器的生成方式，目前的集成学习方法大概可分为两大类，即个体学习器间存在强依赖关系、必须串行产生的序列化方法，以及个体学习器间不存在强依赖关系、可同时生成的并行化方法；前者的代表是Boosting，后者的代表是Bagging和“随机森林”(Random Forest)。
 
 		\subsection{Boosting}
+			Boosting是一族可将弱学习器提升为强学习器的算法。工作机制：先从初始训练集训练出一个基学习器，再根据基学习器的表现对训练样本分布进行调整，使得先前基学习器做错的训练样本在后续受到更多关注，然后基于调整后的样本分布来训练下一个基学习器；如此重复进行，直至基学习器数目达到事先指定的值T，最终将这T个基学习器进行加权求和。
 			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=.7\linewidth]{images/Adaboost.png}
+				\caption{{\rm AdaBoost算法}}
+				\label{AdaBoost}
+			\end{figure}
 			
+			\href{https://zhuanlan.zhihu.com/p/41536315}{知乎解读}
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+		\subsection{Bagging与随机森林}	
+		
+		\subsection{结合策略}
+		
+		\subsection{多样性}
 			
 		
-
-
+			
+	\section{}	
+			
+			
+	
 \end{document}

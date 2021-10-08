@@ -126,6 +126,7 @@ $$
 2. [Presentation on RAFT: Recurrent All-Pairs Field Transforms for Optical Flow.](https://www.youtube.com/watch?v=r3ZtW30exoo)
 3. [ECCV 2020](https://crossminds.ai/video/eccv-2020-best-paper-raft-a-new-deep-network-architecture-for-optical-flow-5f5acf7f7fa4bb2ca9d64e4d/)
 4. [韩国欧巴，听不懂](https://www.youtube.com/watch?v=OnZIDatotZ4)
+5. [量子位](https://cloud.tencent.com/developer/article/1692454)
 
 
 

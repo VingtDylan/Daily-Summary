@@ -1,0 +1,84 @@
+%!TEX program = xelatex
+\documentclass[cn,hazy,black,normal]{elegantnote}
+\usepackage{array}
+\usepackage{zhnumber}
+\usepackage{footmisc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{amsopn}
+
+%公式按照章节编号
+\numberwithin{equation}{section}
+%图片按照章节编号
+\numberwithin{figure}{section}
+
+\title{一些笔记}
+\author{cyh \\ 
+	SIMIT}
+
+\date{\zhtoday}
+%\date{\zhdate{2021/9/22}}
+
+\begin{document}
+	\maketitle
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=.85\linewidth]{images/girl.jpg}
+		\label{girl}
+	\end{figure}
+	
+	\newpage
+	
+	\tableofcontents
+	
+	\newpage
+	
+	\section{机器学习}
+		\subsection{光流学习}
+			\subsubsection{计算机视觉中的warp操作}
+		
+			\subsubsection{图像金字塔的意义}
+			
+			\subsubsection{Epoch-Batch-Iterations}
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=.95\linewidth]{images/epoch-batch-iteration.png}
+					\caption{{\rm Epoch-Batch-Iterations}}
+					\label{Epoch-Batch-Iterations}
+				\end{figure}
+		
+			\subsubsection{计算机视觉中的cost-volume}
+				\href{https://www.zhihu.com/question/366970399}{知乎链接}	
+		
+		
+		
+		
+		
+		
+		\subsection{补充学习}
+			\subsubsection{计算感受野}
+		
+		
+		
+		\subsection{TODO}
+		
+	\section{编程}
+		\subsection{C++}	
+			\subsubsection{C++迭代器}
+				
+		
+		\subsection{Python}
+		
+		\subsection{TODO}
+			
+			
+			
+			
+			
+			
+		
+
+
+\end{document}
