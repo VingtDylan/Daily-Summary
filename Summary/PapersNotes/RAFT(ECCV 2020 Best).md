@@ -2,7 +2,7 @@
 
 **Paper: RAFT: Recurrent All-Pairs Field Transforms for Optical Flow**
 
-<img src = "./../../Summary/images/RAFT1.png" align="center" style="width:90%">
+<img src = "./../images/RAFT1.png" align="center" style="width:90%">
 
 ## 概述
 
@@ -22,7 +22,7 @@ RAFT三个主要部分:
 
 * 一个循环的基于 GRU 的更新算子(update operator)，它从相关体中检索值并迭代更新初始化为零的流场。 
 
-<img src = "./../../Summary/images/RAFT1.png" align="center" style="width:100%">
+<img src = "./../images/RAFT1.png" align="center" style="width:100%">
 
 结构如上图所示，RAFT的 3 个主要组件的详细描述:
 
@@ -49,7 +49,7 @@ RAFT 架构受到传统的基于优化的方法的启发。 特征编码器提�
 
 ### 特征提取
 
-<img src = "./../../Summary/images/RAFT2.png" align="center" style="width:50%">
+<img src = "./../images/RAFT2.png" align="center" style="width:50%">
 
 
 
@@ -64,7 +64,7 @@ $$
 
 #### 相关金字塔
 
-<img src = "./../../Summary/images/RAFT3.png" align="center" style="width:95%">
+<img src = "./../images/RAFT3.png" align="center" style="width:95%">
 
 对相关体的最后两个维度以核大小为1,2,4,8对其进行(均值)池化(pooling)，从而构建了四层的金字塔，分别记为: $\{\boldsymbol{C}^1,\boldsymbol{C}^2,\boldsymbol{C}^3,\boldsymbol{C}^4\}$。因此 $\boldsymbol{C}^k$ 的维度将为 $H\times W \times H/2^k \times W / 2^k$，从而能够提供长距离位移信息和短距离的位移信息。保留前两个维度($I_1$的维度信息)，可以保留高分辨率信息，从而可以恢复小而快速移动的物体。
 
