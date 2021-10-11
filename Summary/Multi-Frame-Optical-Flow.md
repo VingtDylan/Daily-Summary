@@ -1,15 +1,5 @@
 # Optical Flow
 
-## Definition
-
-1. 光流(optical flow)
-2. 由粗到细(coarse-to-fine)
-3. 端到端(end-to-end)
-4. 相关代价体(cost correlation volume)
-5. 
-
-
-
 ## Two-Frame Fashion
 
 ### RAFT (ECCV 2020 best)
