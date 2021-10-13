@@ -4,3 +4,5 @@
 
 <img src = "./../images/SMURF1.png" align="center" style="width:90%">
 
+*  
+* 训练阶段多帧，推理阶段并非多帧
