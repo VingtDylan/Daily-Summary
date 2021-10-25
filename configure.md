@@ -748,6 +748,10 @@ sudo apt-get install libncurses5-dev
 progress -w
 ```
 
+### oh-my-zsh终端美化
+
+
+
 
 
 ### TODO
