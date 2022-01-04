@@ -1,0 +1,74 @@
+Provided
+# C -> C
+raft-chairs chairs 
+    no mixed_precision : 0.817677
+    mixed_precision    : 0.817286
+# C + T -> S
+raft-things sintel 
+    no mixed_precision :
+        Validation (clean) EPE: 1.461615, 1px: 0.901619, 3px: 0.956027, 5px: 0.968359  
+        Validation (final) EPE: 2.794944, 1px: 0.852769, 3px: 0.919030, 5px: 0.938088 
+    mixed_precision    : 
+        Validation (clean) EPE: 1.404444, 1px: 0.901625, 3px: 0.956058, 5px: 0.968405
+        Validation (final) EPE: 2.698857, 1px: 0.852908, 3px: 0.919149, 5px: 0.938207 
+# C + T + S -> S
+raft-sintel sintel:
+    no mixed_precision :
+        Validation (clean) EPE: 0.754012, 1px: 0.923343, 3px: 0.968697, 5px: 0.979266
+        Validation (final) EPE: 1.219118, 1px: 0.886190, 3px: 0.946115, 5px: 0.962800
+    mixed_precision    : 
+        Validation (clean) EPE: 0.767622, 1px: 0.923345, 3px: 0.968705, 5px: 0.979278
+        Validation (final) EPE: 1.218224, 1px: 0.886190, 3px: 0.946125, 5px: 0.962818
+# C + T + K -> K
+raft-kitti kitti:
+    no mixed_precision :
+        Validation KITTI: 0.630345, 1.471309
+    mixed_precision    : 
+        Validation KITTI: 0.630354, 1.471140
+
+Valid
+# C -> S
+# C -> K
+# C + T -> K
+raft-things kitti
+    no mixed_precision :
+        Validation KITTI: 5.000202, 17.443033
+    mixed_precision    : 
+        Validation KITTI: 5.025906, 17.462255
+
+# C + T + S + K -> S
+# C + T + S + K -> K
+# C + T + S + K + H -> S
+# C + T + S + K + H -> K
+
+
+
+Trained
+# C -> C
+raft-chairs chairs
+# C + T -> S
+# C + T + S -> S
+# C + T + K -> K
+
+# C -> S
+# C -> K
+# C + T -> K
+raft-things kitti
+    Validation KITTI: 4.798531, 17.065191
+
+
+# C + T + S + K -> S
+# C + T + S + K -> K
+# C + T + S + K + H -> S
+# C + T + S + K + H -> K
+
+
+
+
+
+
+
+
+
+
+
