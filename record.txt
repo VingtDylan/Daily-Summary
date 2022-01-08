@@ -1,0 +1,24 @@
+C  
+MRAFT/checkpointsHub/TEST/12-28-14-52/1234/span=2-id=0123-bs=24-step=100000/raft-chairs.pth
+100000
+Validation Chairs EPE: 0.437360
+
+
+C + T 
+MRAFT/checkpointsHub/TEST/01-02-08-57/1234/span=4-id=0123-bs=4-step=100000/raft-things.pth
+100000       
+Validation (clean) EPE: 1.320348, 1px: 0.908010, 3px: 0.959758, 5px: 0.971208
+Validation (final) EPE: 2.655038, 1px: 0.858200, 3px: 0.921813, 5px: 0.940276
+
+
+C + T + S
+
+
+
+
+C + T + K
+
+
+
+
+
