@@ -80,8 +80,8 @@ if __name__ == '__main__':
     #body=line.split()
     #USERNAME=body[0]
     #PASSWORD=body[1]
-    USERNAME='5479'  #input('Please enter your username: ')
-    PASSWORD='060097'  #input('Please enter your password: ')
+    USERNAME=''  #input('Please enter your username: ')
+    PASSWORD=''  #input('Please enter your password: ')
     
     #print(getTimeStr(), 'Shanghaitech Auto Loginer has started.')
     print(getTimeStr(), 'SIMIT Auto Loginer has started.')
